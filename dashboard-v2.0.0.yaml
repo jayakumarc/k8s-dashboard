@@ -179,6 +179,7 @@ spec:
             - containerPort: 9090
               protocol: TCP
           args:
+            - --enable-skip-login
             - --enable-insecure-login
             - --namespace=kubernetes-dashboard
             - --sidecar-host=http://dashboard-metrics-scraper:8000
